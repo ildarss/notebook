@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Редактировать запись</h1>
+        <h1>Edit</h1>
 
         <form action="/notebooks/{{$notebook->id}}" method="POST">
             {{csrf_field()}}

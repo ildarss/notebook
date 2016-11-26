@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Книга записей</title>
+    <title>Notebook</title>
     <link rel="stylesheet" href="{{asset('dist/css/main.css')}}">
     <link rel="stylesheet" href="{{asset('dist/css/bootstrap.css')}}">
 </head>
@@ -16,7 +16,7 @@
         </button>
         <div class="collapse navbar-toggleable-xs" id="navbar-header">
             <a class="navbar-brand" href="#">
-                Книга записей
+                Notebook
             </a>
         </div>
 
@@ -24,8 +24,8 @@
         <ul class="dropdown">
             <!-- Authentication Links -->
             @if (Auth::guest())
-                <li><a href="{{ url('/login') }}">Логин</a></li>
-                <li><a href="{{ url('/register') }}">Регистрация</a></li>
+                <li><a href="{{ url('/login') }}">Login</a></li>
+                <li><a href="{{ url('/register') }}">Registration</a></li>
             @else
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -37,7 +37,7 @@
                             <a href="{{ url('/logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                Выйти
+                                Logout
                             </a>
 
                             <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
